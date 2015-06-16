@@ -7,5 +7,9 @@
     <string name="china">中国</string>
     <string name="loading">正在加载&#8230;</string>
     <string name="loaderror">加载失败</string>
+    <string name="fg">~</string>
+    <string name="tbz">同步中&#8230;</string>
+    <string name="tbsb">同步失败</string>
+    
 
 </resources>
