@@ -4,5 +4,8 @@
     <string name="app_name">CoolWeather</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="china">中国</string>
+    <string name="loading">正在加载&#8230;</string>
+    <string name="loaderror">加载失败</string>
 
 </resources>
