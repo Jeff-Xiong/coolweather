@@ -7,24 +7,31 @@
     <uses-sdk
         android:minSdkVersion="15"
         android:targetSdkVersion="17" />
-    
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        
-        <activity android:name="com.xiongzj.coolweather.activity.ChooseAreaActivity"
-            android:label="@string/app_name">
-            <intent-filter >
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+        <activity
+            android:name="com.xiongzj.coolweather.activity.ChooseAreaActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            
         </activity>
-        <activity android:name="com.xiongzj.coolweather.activity.WeatherActivity"></activity>
+        <activity android:name="com.xiongzj.coolweather.activity.WeatherActivity" >
+        </activity>
+
+        <service android:name="com.xiongzj.coolweather.service.AutoUpdateService" >
+        </service>
+
+        <receiver android:name="com.xiongzj.coolweather.receiver.AutoUpdateReceiver" >
+        </receiver>
     </application>
 
 </manifest>
